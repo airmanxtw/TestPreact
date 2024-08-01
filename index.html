@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script type="module">
+      import { h,  render } from "https://esm.sh/preact";      
+      import { useApp } from "./app.js";
+      const { App } = useApp();
+      import htm from "https://esm.sh/htm";
+      
+      const html = htm.bind(h);
+   
+      render(html`<${App}  show />`,document.getElementById("app"));
+   
+    </script>
+    <h2>Preact Demo:</h2>
+    <div id="app"></div>
+  </body>
+</html>
