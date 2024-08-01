@@ -10,7 +10,10 @@ export const useApp = () => {
       setName(new Date().toLocaleTimeString());
     }, 1000);
     return html`${show ? html`<h1>${name}</h1>` : html`<h2>Hello ${name}</h2>`} <br />
-      <button class='border-2 rounded-full p-2 bg-orange-300 shadow-lg hover:bg-gray-300' onClick=${() => onClick(new Date().toLocaleTimeString())}>GET TIME</button> `;
+              <button class='border-2 rounded-full p-2 bg-orange-300 shadow-lg hover:bg-gray-300' onClick=${() => onClick(new Date().toLocaleTimeString())}>
+                GET TIME
+              </button> 
+          `;
   };
 
   return { App };
