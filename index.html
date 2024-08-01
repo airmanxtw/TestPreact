@@ -6,12 +6,13 @@
   </head>
   <body class="container mx-auto">
     <script type="module">
-      import { h, render } from "https://esm.sh/preact";
+      import {  render } from "https://esm.sh/preact";
+      import { html } from 'https://esm.sh/htm/preact/standalone'
       import { useApp } from "./app.js";
       const { App } = useApp();
-      import htm from "https://esm.sh/htm";
+      //import htm from "https://esm.sh/htm";
 
-      const html = htm.bind(h);
+      //const html = htm.bind(h);
 
       const getTime = (v) => {
         alert(v);

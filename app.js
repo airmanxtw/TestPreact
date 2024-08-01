@@ -1,8 +1,9 @@
 import { h } from "https://esm.sh/preact";
 import { useState } from "https://esm.sh/preact/hooks";
-import htm from "https://esm.sh/htm";
+//import htm from "https://esm.sh/htm";
+import { html } from 'https://esm.sh/htm/preact/standalone'
 export const useApp = () => {
-  const html = htm.bind(h);
+  //const html = htm.bind(h);
 
   const App = ({ show, onClick }) => {
     const [name, setName] = useState(new Date().toLocaleTimeString());
