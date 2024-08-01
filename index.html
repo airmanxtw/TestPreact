@@ -1,5 +1,10 @@
 <html>
-  <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
     <script type="module">
       import { h, render } from "https://esm.sh/preact";
       import { useApp } from "./app.js";
@@ -14,7 +19,7 @@
 
       render(html`<${App} show onClick=${getTime} />`, document.getElementById("app"));
     </script>
-    <h2>Preact Demo:</h2>
-    <div id="app"></div>
+    <h2 class="text-3xl font-bold text-orange-600">Preact Demo:</h2>
+    <div  id="app"></div>
   </body>
 </html>
